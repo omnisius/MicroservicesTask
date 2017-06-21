@@ -1,0 +1,24 @@
+info:
+  app:
+    name: two
+    description: Service Two
+
+server:
+  port: ${PORT_TO_EXPOSE:0}
+
+spring:
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  instance:
+      preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${discovery-host}:${discovery-port}/eureka/
+
+logging:
+  level:
+    ROOT: INFO
+    com.epam.javacc.microservices: DEBUG

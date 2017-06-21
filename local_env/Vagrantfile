@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+  #virtualization config
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 6096
+  end
+
+  #guest OS
+  config.vm.box = "ubuntu/trusty64"
+
+  #port forwardings
+  config.vm.network "forwarded_port", guest: 9999, host: 9999
+  config.vm.network "forwarded_port", guest: 8761, host: 8761
+  config.vm.network "forwarded_port", guest: 8765, host: 8765
+  config.vm.synced_folder "../", "/vagrant"
+
+  #config.vm.provision "shell", inline: "apt-get update"
+
+  #install docker
+  config.vm.provision :docker
+  config.vm.provision :docker_compose, yml: "/vagrant/local_env/docker-compose.yml", rebuild: true, run: "always"
+end
