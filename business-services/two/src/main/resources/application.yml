@@ -22,3 +22,8 @@ logging:
   level:
     ROOT: INFO
     com.epam.javacc.microservices: DEBUG
+
+servo:
+  graphite:
+    observerPrefix: your-service
+    address: ${graphite-host}:${graphite-port}

@@ -21,6 +21,8 @@
         <junit.version>4.12</junit.version>
         <discovery-host>localhost</discovery-host>
         <discovery-port>8761</discovery-port>
+        <grafite-host>localhost</grafite-host>
+        <grafite-port>1</grafite-port>
         <docker-maven-plugin.version>0.4.11</docker-maven-plugin.version>
         <feign-slf4j>8.18.0</feign-slf4j>
         <feign-core>8.18.0</feign-core>
