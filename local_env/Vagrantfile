@@ -15,9 +15,9 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   #port forwardings
-  config.vm.network "forwarded_port", guest: 9999, host: 9999
-  config.vm.network "forwarded_port", guest: 8761, host: 8761
-  config.vm.network "forwarded_port", guest: 8765, host: 8765
+  config.vm.network "forwarded_port", guest: 9999, host: 9999, host_ip: "127.0.0.1"
+  config.vm.network "forwarded_port", guest: 8761, host: 8761, host_ip: "127.0.0.1"
+  config.vm.network "forwarded_port", guest: 8765, host: 8765, host_ip: "127.0.0.1"
   config.vm.synced_folder "../", "/vagrant"
 
   #config.vm.provision "shell", inline: "apt-get update"
