@@ -11,7 +11,7 @@
   <artifactId>apigateway</artifactId>
   <packaging>jar</packaging>
   <properties>
-    <start-class>com.epam.javacc.microservices.apigateway.Application</start-class>
+    <start-class>com.epam.javacc.microservices.apigateway.ZuulApplication</start-class>
     <apigateway-port>8765</apigateway-port>
   </properties>
   <build>

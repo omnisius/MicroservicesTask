@@ -11,7 +11,7 @@
   <artifactId>discovery</artifactId>
   <packaging>jar</packaging>
   <properties>
-    <start-class>com.epam.javacc.microservices.servicediscovery.Application</start-class>
+    <start-class>com.epam.javacc.microservices.servicediscovery.EurecaApplication</start-class>
   </properties>
   <build>
     <finalName>${project.artifactId}</finalName>

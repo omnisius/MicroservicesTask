@@ -12,7 +12,7 @@
   <artifactId>taxi-service-rating</artifactId>
   <packaging>jar</packaging>
   <properties>
-    <start-class>com.epam.javacc.microservices.one.Application</start-class>
+    <start-class>com.epam.javacc.microservices.one.FirstApplication</start-class>
   </properties>
   <build>
     <finalName>${project.artifactId}</finalName>
