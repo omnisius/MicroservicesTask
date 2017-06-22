@@ -10,6 +10,8 @@ spring:
   cloud:
     config:
       enabled: false
+  zipkin:
+    baseUrl: http://${zipkin-host}:${zipkin-port}
 
 eureka:
   instance:
@@ -27,4 +29,5 @@ servo:
   graphite:
     observerPrefix: your-service
     address: ${graphite-host}:${graphite-port}
+
 
