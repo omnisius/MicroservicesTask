@@ -21,11 +21,16 @@
         <junit.version>4.12</junit.version>
         <discovery-host>localhost</discovery-host>
         <discovery-port>8761</discovery-port>
-        <grafite-host>localhost</grafite-host>
-        <grafite-port>1</grafite-port>
+        <graphite-host>localhost</graphite-host>
+        <graphite-port>1</graphite-port>
+        <zipkin-host>localhost</zipkin-host>
+        <zipkin-port>2</zipkin-port>
+        <discovery-host>localhost</discovery-host>
+        <discovery-port>8761</discovery-port>
         <docker-maven-plugin.version>0.4.11</docker-maven-plugin.version>
         <feign-slf4j>8.18.0</feign-slf4j>
         <feign-core>8.18.0</feign-core>
+        <servo-graphite>0.10.1</servo-graphite>
         <docker_image_prefix>ma_lab_project</docker_image_prefix>
     </properties>
     <build>

@@ -12,6 +12,8 @@
     <packaging>jar</packaging>
     <properties>
         <start-class>com.epam.javacc.microservices.one.Application</start-class>
+        <base-path></base-path>
+        <JAR_NAME_TO_RUN>two.jar</JAR_NAME_TO_RUN>
     </properties>
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -145,6 +147,7 @@
         <dependency>
             <groupId>com.netflix.servo</groupId>
             <artifactId>servo-graphite</artifactId>
+            <version>${servo-graphite}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -171,6 +174,11 @@
         <dependency>
             <groupId>com.epam.javacc.microservices</groupId>
             <artifactId>two-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.epam.javacc.microservices</groupId>
+            <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
